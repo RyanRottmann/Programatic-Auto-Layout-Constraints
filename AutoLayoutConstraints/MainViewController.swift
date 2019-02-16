@@ -116,8 +116,8 @@ class MainViewController: UIViewController {
             
             buttonHeight = myButton.heightAnchor.constraint(equalToConstant: 50)
             buttonWidth = myButton.widthAnchor.constraint(equalToConstant: 300)
-            buttonXPlacement = myButton.centerXAnchor.constraint(equalTo: self.view.centerXAnchor)
-            buttonYPlacement = myButton.centerYAnchor.constraint(equalTo: self.view.centerYAnchor)
+            buttonXPlacement = myButton.centerXAnchor.constraint(equalTo: self.view.centerXAnchor, constant: 140)
+            buttonYPlacement = myButton.centerYAnchor.constraint(equalTo: self.view.centerYAnchor, constant: -80)
             
             buttonCons = [buttonHeight, buttonWidth, buttonXPlacement, buttonYPlacement]
         } else {
@@ -131,9 +131,8 @@ class MainViewController: UIViewController {
             
             buttonHeight = myButton.heightAnchor.constraint(equalToConstant: 400)
             buttonWidth = myButton.widthAnchor.constraint(equalToConstant: 100)
-            buttonXPlacement = myButton.centerXAnchor.constraint(equalTo: self.view.centerXAnchor)
-            buttonYPlacement = myButton.centerYAnchor.constraint(equalTo: self.view.centerYAnchor)
-            
+            buttonXPlacement = myButton.centerXAnchor.constraint(equalTo: self.view.centerXAnchor, constant: -150)
+            buttonYPlacement = myButton.centerYAnchor.constraint(equalTo: self.view.centerYAnchor, constant: 400)
             buttonCons = [buttonHeight, buttonWidth, buttonXPlacement, buttonYPlacement]
         }
         
